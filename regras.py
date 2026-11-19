@@ -1,12 +1,3 @@
-"""
-Base de conhecimento e motor de inferência do protótipo.
-
-IMPORTANTE:
-- As regras são exemplos acadêmicos, não protocolos clínicos.
-- Devem ser revisadas por profissional de saúde e orientador.
-- O sistema identifica padrões de sintomas, não diagnostica doenças.
-"""
-
 def analisar_respostas(r):
     alertas = []
     associacoes = []
@@ -39,7 +30,7 @@ def analisar_respostas(r):
             "Respiração rápida associada a sinais de esforço respiratório."
         )
 
-    # 2. Regras de associação. Não são exclusivas nem diagnósticas.
+    # 2. Regras de associação.
     # Resfriado / infecção de vias aéreas superiores
     if (
         (r.get("coriza") or r.get("congestao"))
