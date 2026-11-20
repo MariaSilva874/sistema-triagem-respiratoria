@@ -178,4 +178,3 @@ if enviado:
             "As respostas não corresponderam de forma suficiente aos padrões cadastrados. "
             "Isso não significa ausência de doença. Considere avaliação profissional."
         )
-    )
