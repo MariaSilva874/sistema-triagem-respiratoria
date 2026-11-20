@@ -148,8 +148,8 @@ if enviado:
         st.error("Foram identificados sinais de alerta")
         st.markdown(
             "Os sinais selecionados podem indicar uma situação que precisa de avaliação "
-            "imediata. **Procure um serviço de emergência ou acione o SAMU (192), conforme "
-            "a gravidade. Não aguarde a conclusão de uma análise automática.**"
+            "imediata. **Procure um serviço de emergência, conforme "
+            "a gravidade.**"
         )
         for alerta in resultado["alertas"]:
             st.write(f"- {alerta}")
@@ -178,14 +178,4 @@ if enviado:
             "As respostas não corresponderam de forma suficiente aos padrões cadastrados. "
             "Isso não significa ausência de doença. Considere avaliação profissional."
         )
-
-    st.subheader("Informações consideradas")
-    if spo2 is not None:
-        st.write(f"Saturação informada: **{spo2}%** (apenas registrada; não interpretada pelo sistema).")
-    st.caption(
-        "As observações em texto livre não são processadas pelo motor de inferência. "
-        "Nenhum dado é salvo neste protótipo."
     )
-
-st.divider()
-st.caption("Projeto acadêmico | Sistema especialista baseado em regras IF–THEN")
